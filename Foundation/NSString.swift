@@ -809,7 +809,22 @@ extension NSString {
     }
     
     public func enumerateSubstrings(in range: NSRange, options opts: EnumerationOptions = [], using block: (String?, NSRange, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void) {
-        NSUnimplemented()
+        // Block args:
+        // substring
+        // substringRange
+        // enclosingRange
+        // stop
+        
+        Scanner(string: _swiftObject).scanUpToString(<#T##string: String##String#>)
+        
+        let rangeStart = _swiftObject.index(_swiftObject.startIndex, offsetBy: range.location)
+        let rangeEnd = _swiftObject.index(rangeStart, offsetBy: range.length)
+        var currentPos = rangeStart
+        
+        while currentPos < rangeEnd {
+            
+            currentPos = _swiftObject.index(after: currentPos)
+        }
     }
     
     public func enumerateLines(_ block: (String, UnsafeMutablePointer<ObjCBool>) -> Void) {
