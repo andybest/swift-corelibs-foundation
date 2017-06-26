@@ -815,15 +815,17 @@ extension NSString {
         // enclosingRange
         // stop
         
-        Scanner(string: _swiftObject).scanUpToString(<#T##string: String##String#>)
-        
-        let rangeStart = _swiftObject.index(_swiftObject.startIndex, offsetBy: range.location)
-        let rangeEnd = _swiftObject.index(rangeStart, offsetBy: range.length)
-        var currentPos = rangeStart
-        
-        while currentPos < rangeEnd {
+        switch opts {
+        case .byWords:
+            return _matchWordsInString(str: str, in: range, using: block)
+        case .byLines:
+            return _matchLinesInString(str: str, in: range, using: block)
+        case .byParagraphs:
+            // On MacOS, this appears to have the same effect as '.byLines'
+            return _matchLinesInString(str: str, in: range, using: block)
             
-            currentPos = _swiftObject.index(after: currentPos)
+        default:
+            return
         }
     }
     
