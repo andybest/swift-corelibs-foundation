@@ -63,7 +63,6 @@
 		5B13B34E1C582D4C00651CE2 /* TestNSXMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6F17951C48631C00935030 /* TestNSXMLDocument.swift */; };
 		5B13B34F1C582D4C00651CE2 /* TestNSXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40F9F11C125187000E72E3 /* TestNSXMLParser.swift */; };
 		5B13B3501C582D4C00651CE2 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6F17961C48631C00935030 /* TestUtils.swift */; };
-		5B13B3511C582D4C00651CE2 /* TestByteCountFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A34B551C18C85D00FD972B /* TestByteCountFormatter.swift */; };
 		5B13B3521C582D4C00651CE2 /* TestNSValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3047AEB1C38BC3300295652 /* TestNSValue.swift */; };
 		5B1FD9C51D6D16150080E83C /* CFURLSessionInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FD9C11D6D160F0080E83C /* CFURLSessionInterface.c */; };
 		5B1FD9C61D6D161A0080E83C /* CFURLSessionInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1FD9C21D6D160F0080E83C /* CFURLSessionInterface.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -782,7 +781,7 @@
 		9F4ADBD21ECD506E001F0B3D /* XDGTestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XDGTestHelper.swift; path = ../XDGTestHelper.swift; sourceTree = "<group>"; };
 		A058C2011E529CF100B07AA1 /* TestMassFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMassFormatter.swift; sourceTree = "<group>"; };
 		A59BAAA61F01459C003517CF /* StringEnumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringEnumerations.swift; sourceTree = "<group>"; };
-		A5A34B551C18C85D00FD972B /* TestNSByteCountFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNSByteCountFormatter.swift; sourceTree = "<group>"; };
+		A59BAAA81F01470F003517CF /* TestByteCountFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestByteCountFormatter.swift; sourceTree = "<group>"; };
 		AE35A1851CBAC85E0042DB84 /* SwiftFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftFoundation.h; sourceTree = "<group>"; };
 		B167A6641ED7303F0040B09A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B91095781EEF237800A71930 /* NSString-UTF16-LE-data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NSString-UTF16-LE-data.txt"; sourceTree = "<group>"; };
@@ -1416,8 +1415,8 @@
 		EA66F65A1BF1976100136161 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A59BAAA81F01470F003517CF /* TestByteCountFormatter.swift */,
 				6E203B8C1C1303BB003B2576 /* TestBundle.swift */,
-				A5A34B551C18C85D00FD972B /* TestByteCountFormatter.swift */,
 				2EBE67A31C77BF05006583D5 /* TestDateFormatter.swift */,
 				BDBB658F1E256BFA001A7286 /* TestEnergyFormatter.swift */,
 				D512D17B1CD883F00032E6A5 /* TestFileHandle.swift */,
@@ -2416,7 +2415,6 @@
 				5B13B3341C582D4C00651CE2 /* TestNSKeyedArchiver.swift in Sources */,
 				5B13B3441C582D4C00651CE2 /* TestNSSet.swift in Sources */,
 				5B13B3321C582D4C00651CE2 /* TestNSIndexSet.swift in Sources */,
-				5B13B3511C582D4C00651CE2 /* TestByteCountFormatter.swift in Sources */,
 				BDFDF0A71DFF5B3E00C04CC5 /* TestNSPersonNameComponents.swift in Sources */,
 				5B13B3501C582D4C00651CE2 /* TestUtils.swift in Sources */,
 				CD1C7F7D1E303B47008E331C /* TestNSError.swift in Sources */,
